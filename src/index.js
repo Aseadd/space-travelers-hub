@@ -6,7 +6,7 @@ import Missions from './components/missions';
 import Rockets from './components/rockets';
 import Profile from './components/profile';
 import Navbar from './components/navbar';
-import './components/navbar.css';
+// import './components/navbar.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
