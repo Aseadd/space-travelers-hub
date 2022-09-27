@@ -20,7 +20,7 @@ function Missions() {
           <div className="missions-list">
             {missions.map((mission) => (
               <div key={mission.id} className="mission">
-                <div className="mission-name">
+                <div className="mission-info">
                   <h3>{mission.name}</h3>
                   <p>{mission.description}</p>
                 </div>
@@ -31,26 +31,15 @@ function Missions() {
                   <button
                     type="button"
                     className={mission.reserved ? 'leave-btn' : 'join-btn'}
-                    onClick={() => dispatch(reservedMission(mission.id))}
-                  >
+                    onClick={() => dispatch(reservedMission(mission.id))}>
                     {mission.reserved ? 'Leave Mission' : 'Join Mission'}
                   </button>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-        <div className="missions-footer">
-          <Link to="/">
-            <button type="button" className="back-btn">Back</button>
-          </Link>
-          <span className="amount-missions">
-            {amountMissions}
-            {' '}
-            {amountMissions === 1 ? 'Mission' : 'Missions'}
-          </span>
-        </div>
       </div>
+    </div>
   );
 }                    
 
