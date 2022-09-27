@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { getMissions, reservedMission } from '../redux/missions/missions';
 
 
 function Missions() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions.missions);
-  const amountMissions = missions.filter((mission) => mission.reserved).length;
 
   useEffect(() => {
     dispatch(getMissions());
