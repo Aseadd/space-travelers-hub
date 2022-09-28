@@ -43,11 +43,13 @@ const Rocket = ({ rocket }) => {
 };
 
 Rocket.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  flickr_images: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
+  rocket: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    reserved: PropTypes.bool.isRequired,
+  }).isRequired,
 };
 
 export default Rocket;

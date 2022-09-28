@@ -42,6 +42,7 @@ Mission.propTypes = {
     id: PropTypes.string.isRequired,
     mission_name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    status: PropTypes.bool.isRequired,
   }).isRequired,
 };
 
