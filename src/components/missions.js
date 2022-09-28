@@ -8,6 +8,11 @@ function Missions() {
   return (
     <div>
       <ul>
+        <li className="mission-title">
+          <span className="table-header">Mission</span>
+          <span className="table-header">Description</span>
+          <span className="table-header">Status</span>
+        </li>
         {missions?.map((mission) => (
           <Mission key={mission.mission_id} mission={mission} />
         ))}

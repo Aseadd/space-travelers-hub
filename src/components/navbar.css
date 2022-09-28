@@ -1,6 +1,6 @@
 nav {
   height: 6rem;
-  width: 98vw;
+  width: 100%;
   background-color: #fff;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -143,8 +143,10 @@ nav {
 /* Stying for small screens */
 @media screen and (max-width: 800px) {
   nav {
-    position: fixed;
+    position: relative;
     z-index: 3;
+    height: 3rem;
+    width: 100%;
   }
 
   .profile-button {
@@ -162,21 +164,44 @@ nav {
     transition: all 0.7s ease;
   }
 
+  .logo {
+    font-size: 0.75rem;
+  }
+
+  .logo-img {
+    width: 30%;
+    height: 10%;
+  }
+
+  @keyframes float {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .logo-title {
+    margin: 0;
+    padding: 0;
+    margin-left: 0.5rem;
+    transform: rotate(0deg);
+    animation: logo 3s ease-in-out infinite;
+  }
+
   .nav-links {
     position: fixed;
     background: #131418;
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
+    clip-path: circle(50px at 90% -20%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
 
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
 
@@ -216,6 +241,22 @@ nav {
 
   li.fade {
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes logo {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 }
 
