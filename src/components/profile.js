@@ -13,7 +13,7 @@ function Profile() {
         <h1>My Missions</h1>
         <ul className="reserved-list-mission">
           {reservedMissions
-            ?.filter((mission) => mission.status)
+            .filter((mission) => mission.status)
             .map((mission) => (
               <li key={mission.mission_id} className="reserved-item">
                 {mission.mission_name}
