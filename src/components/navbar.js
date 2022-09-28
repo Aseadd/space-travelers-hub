@@ -11,6 +11,11 @@ function Navbar() {
   return (
     <nav>
       <div className="logo">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png"
+          alt="logo"
+          style={{ width: '100px', height: '100px' }}
+        />
         <span>Space Travelers&apos; Hub</span>
       </div>
       <div className="hamburger">
