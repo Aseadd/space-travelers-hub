@@ -10,7 +10,7 @@ function Profile() {
   return (
     <div className="container">
       <div>
-        <h1>My Missions</h1>
+        <h1 className="profile-title-mission">My Missions</h1>
         <ul className="reserved-list-mission">
           {reservedMissions
             ?.filter((mission) => mission.status)
@@ -22,7 +22,7 @@ function Profile() {
         </ul>
       </div>
       <div>
-        <h1>My Rockets</h1>
+        <h1 className="profile-title-rocket">My Rockets</h1>
         <ul className="reserved-list-rocket">
           {reservedRockets
             ?.filter((rocket) => rocket.reserved)

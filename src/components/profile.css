@@ -8,6 +8,17 @@
   padding-left: 10px;
 }
 
+.profile-title-mission {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+.profile-title-rocket {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 .reserved-list-mission {
   display: flex;
   flex-direction: column;

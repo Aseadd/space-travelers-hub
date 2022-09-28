@@ -28,6 +28,26 @@ body {
   box-shadow: 2px 2px 2px 2px #747572;
 }
 
+.figure {
+  width: 15rem;
+  height: 10rem;
+}
+
+img {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 25px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.figure:hover img {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
 .rocket-info {
   display: flex;
   flex-direction: column;
@@ -48,7 +68,7 @@ body {
 }
 
 .rocket-description {
-  display: flex;
+  text-align: justify;
 }
 
 .reserve-button {
@@ -68,6 +88,12 @@ body {
   color: #fff;
 }
 
+.reserve-button:hover {
+  background-color: #0a369d;
+  color: #fff;
+  border: 1px solid #0290ff;
+}
+
 .cancel-button {
   width: 13.5rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
@@ -85,28 +111,20 @@ body {
   color: #000;
 }
 
+.cancel-button:hover {
+  background-color: #6f686d;
+  color: #fff;
+  border: 1px solid #6f686d;
+}
+
 .is-reserved {
+  width: 6rem;
   background-color: green;
   color: #fff;
   font-size: 12px;
   height: max-content;
   border-radius: 5px;
   border: none;
-}
-
-img {
-  width: 12rem;
-  height: auto;
-  border-radius: 1.5rem;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.rocket:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
 }
 
 @media (max-width: 800px) {
