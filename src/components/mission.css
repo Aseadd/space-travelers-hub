@@ -47,6 +47,8 @@ body {
   letter-spacing: normal;
   color: #121212;
   border-left: 1px solid #e8e8e8;
+  padding: 0 1rem;
+  text-align: justify;
 }
 
 .status-buttons {
