@@ -24,24 +24,25 @@ function Mission({ mission }) {
         onClick={handleMissionMembership}
         className="member-button"
       >
-        {mission.reserved ? 'Active Member' : 'Not a Member'}
+        {mission.status ? 'Active Member' : 'Not a Member'}
       </button>
       <button
         type="button"
         onClick={handleMissionMembership}
         className="join-button"
       >
-        {mission.reserved ? 'Leave Mission' : 'Join Mission'}
+        {mission.status ? 'Leave Mission' : 'Join Mission'}
       </button>
     </div>
   );
 }
 
 Mission.propTypes = {
-  id: PropTypes.string.isRequired,
-  mission_name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
+  mission: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    mission_name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Mission;
