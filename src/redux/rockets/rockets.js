@@ -1,28 +1,28 @@
 const FETCH_ROCKETS = 'Fetch_Rockets';
-const FETCH_ROCKETS_Success = 'Fetch_Rockets_Success';
-const FETCH_ROCKETS_Failure = 'Fetch_Rockets_Failure';
-const Reserve_Rocket = 'Reserve_Rocket';
-const Cancel_Rocket = 'Cancel_Rocket';
+const FETCH_ROCKETS_SUCCESS = 'Fetch_Rockets_Success';
+const FETCH_ROCKETS_FAILURE = 'Fetch_Rockets_Failure';
+const RESERVE_ROCKET = 'Reserve_Rocket';
+const CANCEL_ROCKET = 'Cancel_Rocket';
 
 const initialState = {};
 const fetchRockets = () => ({ type: FETCH_ROCKETS });
 const fetchRocketsSuccess = (payload) => ({
-  type: FETCH_ROCKETS_Success,
+  type: FETCH_ROCKETS_SUCCESS,
   payload,
 });
 
 const fetchRocketsFailure = (payload) => ({
-  type: FETCH_ROCKETS_Failure,
+  type: FETCH_ROCKETS_FAILURE,
   payload,
 });
 
 const reserveRocket = (payload) => ({
-  type: Reserve_Rocket,
+  type: RESERVE_ROCKET,
   payload,
 });
 
 const cancelRocket = (payload) => ({
-  type: Cancel_Rocket,
+  type: CANCEL_ROCKET,
   payload,
 });
 
@@ -51,11 +51,11 @@ const rocketsReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ROCKETS:
       return { ...state, loading: true };
-    case FETCH_ROCKETS_Success:
+    case FETCH_ROCKETS_SUCCESS:
       return { ...state, loading: false, rockets: action.payload };
-    case FETCH_ROCKETS_Failure:
+    case FETCH_ROCKETS_FAILURE:
       return { ...state, loading: false, error: action.payload };
-    case Reserve_Rocket:
+    case RESERVE_ROCKET:
       return {
         ...state,
         rockets: state.rockets.map((rocket) => {
@@ -65,7 +65,7 @@ const rocketsReducer = (state = initialState, action) => {
           return rocket;
         }),
       };
-    case Cancel_Rocket:
+    case CANCEL_ROCKET:
       return {
         ...state,
         rockets: state.rockets.map((rocket) => {
