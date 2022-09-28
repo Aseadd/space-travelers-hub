@@ -17,7 +17,7 @@ const Rocket = ({ rocket }) => {
 
   return (
     <li key={rocket.id} className="rocket">
-      <img src={rocket.image} alt={rocket.name} />
+      <img src={rocket.image} alt={rocket.name} className="rocket-image" />
       <div className="rocket-info">
         <span className="rocket-name">{rocket.name}</span>
         <div className="rocket-description">
