@@ -145,6 +145,8 @@ nav {
   nav {
     position: fixed;
     z-index: 3;
+    height: 3rem;
+    width: 100%;
   }
 
   .profile-button {
@@ -160,6 +162,29 @@ nav {
     transform: translate(-5%, -50%);
     z-index: 2;
     transition: all 0.7s ease;
+  }
+
+  .logo {
+    font-size: 0.75rem;
+  }
+
+  .logo-img {
+    width: 70%;
+    height: 30%;
+  }
+
+  @keyframes float {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .logo-title {
+    margin: 0;
+    padding: 0;
+    margin-left: 0.5rem;
+    transform: rotate(0deg);
+    animation: logo 3s ease-in-out infinite;
   }
 
   .nav-links {
