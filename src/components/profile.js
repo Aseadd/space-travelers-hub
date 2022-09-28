@@ -12,21 +12,20 @@ function Profile() {
       <div>
         <h1>My Missions</h1>
         <ul className="reserved-list-mission">
-          {reservedMissions &&
-            reservedMissions
-              .filter((mission) => mission.status)
-              .map((mission) => (
-                <li key={mission.mission_id} className="reserved-item">
-                  {mission.mission_name}
-                </li>
-              ))}
+          {reservedMissions
+            ?.filter((mission) => mission.status)
+            .map((mission) => (
+              <li key={mission.mission_id} className="reserved-item">
+                {mission.mission_name}
+              </li>
+            ))}
         </ul>
       </div>
       <div>
         <h1>My Rockets</h1>
         <ul className="reserved-list-rocket">
           {reservedRockets
-            .filter((rocket) => rocket.reserved)
+            ?.filter((rocket) => rocket.reserved)
             .map((rocket) => (
               <li key={rocket.id} className="reserved-item">
                 {rocket.name}
