@@ -11,7 +11,15 @@ function Navbar() {
   return (
     <nav>
       <div className="logo">
-        <span>Space Travelers&apos; Hub</span>
+        <div className="logo-img">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png"
+            alt="logo"
+            style={{ width: '100px', height: '100px' }}
+            className="logo-img"
+          />
+        </div>
+        <span className="logo-title">Space Travelers&apos; Hub</span>
       </div>
       <div className="hamburger">
         <div className="line1" />
