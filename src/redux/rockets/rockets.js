@@ -4,7 +4,7 @@ const FETCH_ROCKETS_FAILURE = 'Fetch_Rockets_Failure';
 const RESERVE_ROCKET = 'Reserve_Rocket';
 const CANCEL_ROCKET = 'Cancel_Rocket';
 
-const initialState = {};
+const initialState = [];
 const fetchRockets = () => ({ type: FETCH_ROCKETS });
 const fetchRocketsSuccess = (payload) => ({
   type: FETCH_ROCKETS_SUCCESS,

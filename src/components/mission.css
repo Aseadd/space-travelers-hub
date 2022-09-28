@@ -12,13 +12,12 @@ body {
 }
 
 .mission {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 15% 55% 30%;
   justify-content: center;
-  width: 85vw;
   height: max-content;
   margin: 0.313rem 4.25rem 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  padding: 2rem 1.188rem 0.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
@@ -26,13 +25,7 @@ body {
 
 .mission:hover {
   background-color: #e8e8e8;
-}
-
-.mission-info {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  padding-left: 2rem;
+  box-shadow: 2px 2px 2px 2px #747572;
 }
 
 .mission-name {
@@ -47,9 +40,26 @@ body {
 
 .mission-description {
   display: flex;
+  font-size: 0.75rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+  border-left: 1px solid #e8e8e8;
 }
 
-.member-button {
+.status-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-left: 1px solid #e8e8e8;
+}
+
+.active-member {
   width: 10.5rem;
   height: max-content;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
@@ -65,13 +75,50 @@ body {
   letter-spacing: 0.5px;
   text-align: center;
   color: #fff;
+  border-left: 1px solid #e8e8e8;
+}
+
+.not-member {
+  width: 10.5rem;
+  height: max-content;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border: none;
+  border-radius: 7px;
+  background-color: #50514f;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.913vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
 }
 
 .join-button {
-  width: 13.5rem;
+  width: 10.5rem;
   height: max-content;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border: 1px solid #000;
+  border-radius: 7px;
+  background-color: #fff;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.913vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #000;
+}
+
+.leave-button {
+  width: 10.5rem;
+  height: max-content;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border: 2px solid #f25f5c;
   border-radius: 7px;
   background-color: #fff;
   font-family: RobotoSlab, sans-serif;

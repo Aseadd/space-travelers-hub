@@ -8,8 +8,8 @@ function Missions() {
   return (
     <div>
       <ul>
-        {missions.map((mission) => (
-          <Mission key={mission.id} mission={mission} />
+        {missions?.map((mission) => (
+          <Mission key={mission.mission_id} mission={mission} />
         ))}
       </ul>
     </div>
