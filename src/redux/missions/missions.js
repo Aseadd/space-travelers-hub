@@ -32,7 +32,7 @@ const fetchMissionsThunk = () => async (dispatch) => {
     const response = await fetch('https://api.spacexdata.com/v3/missions');
     const data = await response.json();
     const missions = [];
-    data.forEach((mission) => {
+    data?.forEach((mission) => {
       missions.push({
         mission_id: mission.mission_id,
         mission_name: mission.mission_name,

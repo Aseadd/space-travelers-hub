@@ -32,16 +32,18 @@ const fetchRocketsThunk = () => async (dispatch) => {
     const response = await fetch('https://api.spacexdata.com/v3/rockets');
     const data = await response.json();
     const rockets = [];
-    data.forEach((rocket) => {
-      rockets.push({
-        id: rocket.rocket_id,
-        name: rocket.rocket_name,
-        description: rocket.description,
-        image: rocket.flickr_images[0],
-        reserved: false,
+    if (data !== undefined) {
+      data?.forEach((rocket) => {
+        rockets.push({
+          id: rocket.rocket_id,
+          name: rocket.rocket_name,
+          description: rocket.description,
+          image: rocket.flickr_images[0],
+          reserved: false,
+        });
       });
-    });
-    dispatch(fetchRocketsSuccess(rockets));
+      dispatch(fetchRocketsSuccess(rockets));
+    }
   } catch (error) {
     dispatch(fetchRocketsFailure(error.message));
   }

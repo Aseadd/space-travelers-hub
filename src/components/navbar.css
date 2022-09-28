@@ -108,6 +108,10 @@ nav {
   width: 80%;
 }
 
+.active-menu {
+  color: red;
+}
+
 .profile-button {
   color: #131418;
   background-color: #61dafb;
