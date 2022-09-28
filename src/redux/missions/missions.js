@@ -4,7 +4,7 @@ const FETCH_MISSONS_FAILURE = 'FETCH_MISSONS_FAILURE';
 const RESERVE_MISSION = 'RESERVE_MISSION';
 const CANCEL_MISSION = 'CANCEL_MISSION';
 
-const initialState = {};
+const initialState = [];
 const fetchMissions = () => ({ type: FETCH_MISSONS });
 const fetchMissionsSuccess = (payload) => ({
   type: FETCH_MISSONS_SUCCESS,
