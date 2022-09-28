@@ -219,6 +219,22 @@ nav {
   }
 }
 
+@media (max-width: 768px) {
+  @keyframes logo {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-5px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
 /* Animating Hamburger Icon on Click */
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
