@@ -30,7 +30,13 @@ To get a local copy up and running follow these simple steps.
 ```
 
 - **Type the following lists of commands and press ENTER after each command:**
-  - _Basic Setup_
+  - _Basic Setup to install necessary packages_
+
+```sh
+  npm install
+```
+
+- _To start the app on the server_
 
 ```sh
   npm start
