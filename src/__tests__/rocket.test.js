@@ -13,7 +13,7 @@ describe('testing Rockets component', () => {
         </Router>
       </Provider>,
     );
-    const rockets = screen.getByTestId("rocketTest");
+    const rockets = screen.getByTestId('rocketTest');
 
     expect(rockets).toEqual(expect.anything());
   });
