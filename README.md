@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet) ![HTML](https://img.shields.io/badge/-HTML-orange) ![CSS](https://img.shields.io/badge/-CSS-blue) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow) ![React](https://img.shields.io/badge/-react-green)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Space Travelers Hub:
 
-## Available Scripts
+- A web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. The data is fetched from a SpaceX API in real time.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+To get a local copy up and running follow these simple steps.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- VIsual Studio Code.
 
-### `npm test`
+### Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Open the terminal on your computer
+- Navigate through directories using [change directory (cd)](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10) command to where you want to clone the repository.
+- Type the following command then press ENTER:
 
-### `npm run build`
+```sh
+  git clone git@github.com:Aseadd/space-travelers-hub.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The terminal will send to you information about your download.
+- Type the following command then press ENTER:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+  cd space-travelers-hub
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Type the following lists of commands and press ENTER after each command:**
+  - _Basic Setup_
 
-### `npm run eject`
+```sh
+  npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Open folder in VSC**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+  code .
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Launches the test runner
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+  npm test
+```
 
-## Learn More
+### To build the app for production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+  npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Built With
 
-### Code Splitting
+- **HTML/CSS & JS best practices:** Correct use of tags, elements, properties and ES6 syntax.
+- **GitHub flow:** Correct use of Branches for deployment and features development.
+- **Linters Check:** Local and Pull Request check for errors, bugs and stylistic errors in code.
+- **React:** JavaScript library.
+- **React-test-library:** React Testing library.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Authors
 
-### Analyzing the Bundle Size
+### 👤 Addis Tsega
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- GitHub: [@Aseadd](https://github.com/Aseadd)
+- Twitter: [@AdaTsega](https://twitter.com/AdaTsega)
+- LinkedIn: [Addis Tsega](https://www.linkedin.com/in/addis-tsega-422789195/)
 
-### Making a Progressive Web App
+### 👤 Robin Benitez Mora
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [@robinbenitezmora](https://github.com/robinbenitezmora)
+- Twitter: [@mecanico_robin](https://twitter.com/mecanico_robin)
+- LinkedIn: [Robin BEnitez](https://www.linkedin.com/in/robin-benitez-mora-manizales)
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Give a ⭐️ if you like this project!
 
-### Deployment
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project is [MIT](./LICENSE) licensed.
