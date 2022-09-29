@@ -21,11 +21,7 @@ function Navbar() {
         </div>
         <span className="logo-title">Space Travelers&apos; Hub</span>
       </div>
-      <div className="hamburger">
-        <div className="line1" />
-        <div className="line2" />
-        <div className="line3" />
-      </div>
+
       <ul className="nav-links">
         {links.map((link) => (
           <li key={link.id}>
