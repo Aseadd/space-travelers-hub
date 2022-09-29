@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   const links = [
@@ -29,7 +29,7 @@ function Navbar() {
       <ul className="nav-links">
         {links.map((link) => (
           <li key={link.id}>
-            <Link to={link.path}>{link.name}</Link>
+            <NavLink to={link.path}>{link.name}</NavLink>
           </li>
         ))}
       </ul>
