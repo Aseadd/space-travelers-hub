@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -7,9 +7,20 @@ function Navbar() {
     { id: 2, name: 'Missions', path: '/missions' },
     { id: 3, name: 'My Profile', path: '/profile' },
   ];
+  const [hambergerOpen, setHambergerOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
+  const handleHamberger = () => {
+    setHambergerOpen(!hambergerOpen);
+  };
+
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+  console.log(hambergerOpen);
   return (
     <nav>
+      <button onClick={handleToggle}>{navbarOpen ? 'Close' : 'Open'}</button>
       <div className="logo">
         <div className="logo-img">
           <img
@@ -21,12 +32,12 @@ function Navbar() {
         </div>
         <span className="logo-title">Space Travelers&apos; Hub</span>
       </div>
-      <div className="hamburger">
+      <div className="hamburger" onClick={handleHamberger}>
         <div className="line1" />
         <div className="line2" />
         <div className="line3" />
       </div>
-      <ul className="nav-links">
+      <ul className={`nav-links ${navbarOpen ? ' showMenu' : ''}`}>
         {links.map((link) => (
           <li key={link.id}>
             <Link to={link.path}>{link.name}</Link>

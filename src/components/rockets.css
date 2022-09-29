@@ -132,7 +132,7 @@ img {
     flex-direction: column;
     align-self: center;
     width: auto;
-    height: 40rem;
+    height: 43rem;
     padding: 1rem 2rem;
     gap: 1rem;
   }
@@ -145,9 +145,11 @@ img {
   }
 
   img {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 1rem;
+    align-items: center;
+    margin: 0;
   }
 
   .rocket-description {
@@ -158,7 +160,7 @@ img {
   .cancel-button {
     font-size: 1rem;
     font-weight: 500;
-    width: 10rem;
+    width: max-content;
     height: 2rem;
     padding: 0.5rem;
     margin-top: 1.5rem;
