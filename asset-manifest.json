@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Aseadd/space-travelers-hub/static/css/main.73899d36.css",
+    "main.js": "/Aseadd/space-travelers-hub/static/js/main.38c3f38f.js",
+    "index.html": "/Aseadd/space-travelers-hub/index.html",
+    "main.73899d36.css.map": "/Aseadd/space-travelers-hub/static/css/main.73899d36.css.map",
+    "main.38c3f38f.js.map": "/Aseadd/space-travelers-hub/static/js/main.38c3f38f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73899d36.css",
+    "static/js/main.38c3f38f.js"
+  ]
+}
