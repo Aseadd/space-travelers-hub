@@ -76,6 +76,12 @@ To get a local copy up and running follow these simple steps.
 - Twitter: [@mecanico_robin](https://twitter.com/mecanico_robin)
 - LinkedIn: [Robin BEnitez](https://www.linkedin.com/in/robin-benitez-mora-manizales)
 
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Aseadd/space-travelers-hub/issues).
+
 ## Show your support
 
 - Give a ⭐️ if you like this project!
