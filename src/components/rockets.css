@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #f5f6fa;
+}
+
+.rocket {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 12.5rem;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  margin: 0.5rem 4.25rem 0;
+  border-radius: 1rem;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.rocket:hover {
+  background-color: #e8e8e8;
+  box-shadow: 2px 2px 2px 2px #747572;
+}
+
+.figure {
+  width: 15rem;
+  height: 10rem;
+}
+
+img {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 25px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.figure:hover img {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 9rem;
+  gap: 0.5rem;
+  padding-left: 3rem;
+}
+
+.rocket-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.rocket-description {
+  text-align: justify;
+}
+
+.reserve-button {
+  width: 10.5rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border: none;
+  border-radius: 7px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.913vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.reserve-button:hover {
+  background-color: #0a369d;
+  color: #fff;
+  border: 1px solid #0290ff;
+}
+
+.cancel-button {
+  width: 13.5rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border: 1px solid #000;
+  border-radius: 7px;
+  background-color: #fff;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.913vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #000;
+}
+
+.cancel-button:hover {
+  background-color: #6f686d;
+  color: #fff;
+  border: 1px solid #6f686d;
+}
+
+.is-reserved {
+  width: 6rem;
+  background-color: green;
+  color: #fff;
+  font-size: 12px;
+  height: max-content;
+  border-radius: 5px;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  .rocket {
+    flex-direction: column;
+    align-self: center;
+    width: auto;
+    height: 40rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  .rocket-info,
+  .rocket-name {
+    display: flex;
+    padding-left: 0;
+    align-items: flex-start;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .rocket-description {
+    text-align: justify;
+  }
+
+  .reserve-button,
+  .cancel-button {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 10rem;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .rocket:hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
